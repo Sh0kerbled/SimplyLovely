@@ -1,10 +1,12 @@
 package handlers
 
 import (
-	"fmt"
 	"net/http"
+	"text/template"
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "тут будет главная страница")
+	tmpl, _ := template.ParseFiles("web/templates/layouts/base.html")
+
+	tmpl.Execute(w, nil)
 }
