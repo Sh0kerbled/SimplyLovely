@@ -1,0 +1,906 @@
+{{define "content"}}
+<main>
+  <!-- BEGIN: HeroSection -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8"
+    data-purpose="hero-banner"
+    data-reveal="fade"
+  >
+    <div
+      class="relative w-full rounded-2xl overflow-hidden bg-gradient-to-r from-black via-zinc-900 to-neutral-900 text-white min-h-[440px] flex items-center shadow-xl hero-panel"
+    >
+      <!-- Hero Background Representation with dark race track and back of car -->
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="Formula 1 Supercar Track"
+          class="w-full h-full object-cover object-right opacity-30 mix-blend-luminosity filter contrast-125 hero-image"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XSE4W25uTzCub9D-CAvas3EbcODrv0CaRG9amb-oYgpJhsIQTom9OG_D1dnhz1fWSatvjtkWeq65fxCzA2c4FUhCvyRPKQYXhNxglis_RBjyjf-J-Ip3R9P7ogkrqj_CB_RvsTLKFxDYLukHtYG0BZSUZKNTME6fEvSFVAg2PWddnF7G8F3DTTIJpFeRVpsjzWfuZ_3NpDl54qKUNcPBklHdakvAHI6mNYAzag"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"
+        ></div>
+        <!-- Red FIA Rain Light Glow Simulation -->
+        <div
+          class="absolute right-1/4 top-1/2 -translate-y-8 w-24 h-24 bg-red-600 rounded-full blur-3xl opacity-40"
+        ></div>
+        <!-- Simulated rear wing silhouette element with logo -->
+        <div class="absolute right-12 top-10 hidden lg:block opacity-20">
+          <svg
+            class="w-72 h-36 text-red-600"
+            fill="currentColor"
+            viewBox="0 0 100 40"
+          >
+            <path
+              d="M0,38 L30,4 L48,4 L32,38 L16,38 L25,18 L18,18 L9,38 Z M45,4 L88,4 C96,4 100,8 98,14 C96,18 91,22 84,23 L96,38 L81,38 L72,25 L58,25 L52,38 L38,38 Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 max-w-xl px-8 sm:px-14 py-12 hero-copy"
+        data-reveal="left"
+      >
+        <p
+          class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3"
+        >
+          Официальный F1 магазин
+        </p>
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.08] mb-4 hero-heading"
+        >
+          Формула 1<br />в твоём стиле
+        </h1>
+        <p
+          class="text-sm sm:text-base text-zinc-300 mb-8 max-w-md font-normal leading-relaxed"
+        >
+          Оригинальный мерч команд, коллекционные модели и аксессуары для
+          настоящих фанатов.
+        </p>
+        <!-- Primary CTA Button -->
+        <a
+          class="inline-flex items-center gap-2.5 bg-f1red hover:bg-red-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition duration-200 shadow-lg shadow-red-900/30 group button-animated"
+          href="#popular"
+        >
+          <span>В магазин</span>
+          <svg
+            class="w-4 h-4 transition-transform group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+            ></path>
+          </svg>
+        </a>
+        <!-- Carousel Indicator Dots -->
+        <div class="flex items-center space-x-2 mt-10">
+          <span class="w-2.5 h-2.5 bg-f1red rounded-full"></span>
+          <span
+            class="w-2 h-2 bg-zinc-600 rounded-full hover:bg-zinc-400 cursor-pointer"
+          ></span>
+          <span
+            class="w-2 h-2 bg-zinc-600 rounded-full hover:bg-zinc-400 cursor-pointer"
+          ></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: HeroSection -->
+  <!-- BEGIN: ValuePropositionBar -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"
+    data-purpose="features-strip"
+    data-reveal="up"
+  >
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 px-4 border-b border-gray-200"
+    >
+      <!-- Feature 1 -->
+      <div class="flex items-center space-x-3.5">
+        <div class="text-gray-900 flex-shrink-0">
+          <svg
+            class="w-7 h-7 stroke-[1.5]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8 17a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM3 5h11v10H3V5zm11 3h4l3 4v3h-7V8z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-xs sm:text-sm text-gray-900 leading-tight">
+            Доставка по Казахстану
+          </h4>
+          <p class="text-xs text-gray-500 mt-0.5">Быстро и надёжно</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="flex items-center space-x-3.5">
+        <div class="text-gray-900 flex-shrink-0">
+          <svg
+            class="w-7 h-7 stroke-[1.5]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-xs sm:text-sm text-gray-900 leading-tight">
+            Оригинальный мерч
+          </h4>
+          <p class="text-xs text-gray-500 mt-0.5">Лицензионная продукция</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="flex items-center space-x-3.5">
+        <div class="text-gray-900 flex-shrink-0">
+          <svg
+            class="w-7 h-7 stroke-[1.5]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <rect
+              height="14"
+              rx="2"
+              stroke-width="1.5"
+              width="20"
+              x="2"
+              y="5"
+            ></rect>
+            <line stroke-width="1.5" x1="2" x2="22" y1="10" y2="10"></line>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-xs sm:text-sm text-gray-900 leading-tight">
+            Удобная оплата
+          </h4>
+          <p class="text-xs text-gray-500 mt-0.5">Kaspi, карта, рассрочка</p>
+        </div>
+      </div>
+      <!-- Feature 4 -->
+      <div class="flex items-center space-x-3.5">
+        <div class="text-gray-900 flex-shrink-0">
+          <svg
+            class="w-7 h-7 stroke-[1.5]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-xs sm:text-sm text-gray-900 leading-tight">
+            Возврат 14 дней
+          </h4>
+          <p class="text-xs text-gray-500 mt-0.5">Если товар не подошёл</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: ValuePropositionBar -->
+  <!-- BEGIN: TeamsStrip -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+    data-purpose="teams-section"
+    data-reveal="up"
+  >
+    <div class="flex items-center justify-between mb-5">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+        Команды Формулы 1
+      </h2>
+      <a
+        class="text-xs font-semibold text-gray-800 hover:text-f1red flex items-center gap-1 group"
+        href="#"
+      >
+        <span>Все команды</span>
+        <svg
+          class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.5"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <!-- Teams Card Strip -->
+    <div
+      class="flex items-center gap-3 overflow-x-auto hide-scrollbar py-2"
+      data-stagger=""
+    >
+      <!-- Red Bull -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="0"
+      >
+        <span class="text-sm font-black italic tracking-tighter text-blue-900"
+          >Red<span class="text-red-600">Bull</span></span
+        >
+      </div>
+      <!-- Ferrari -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="65"
+      >
+        <div
+          class="w-9 h-11 bg-yellow-400 border border-yellow-500 rounded-t-sm rounded-b-xl flex items-center justify-center text-[10px] font-black shadow-inner"
+        >
+          🐎
+        </div>
+      </div>
+      <!-- Mercedes -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="130"
+      >
+        <div
+          class="w-8 h-8 rounded-full border-2 border-zinc-700 flex items-center justify-center text-xs font-bold text-zinc-700"
+        >
+          ★
+        </div>
+      </div>
+      <!-- McLaren -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="195"
+      >
+        <div
+          class="w-10 h-4 bg-orange-500 rounded-tr-full rounded-bl-full flex items-center justify-center"
+        >
+          <span class="text-[8px] font-black text-black tracking-widest"
+            >MCL</span
+          >
+        </div>
+      </div>
+      <!-- Aston Martin -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="260"
+      >
+        <div
+          class="px-2 py-0.5 bg-emerald-900 rounded text-emerald-300 text-[9px] font-extrabold tracking-wider border border-emerald-700"
+        >
+          ASTON
+        </div>
+      </div>
+      <!-- Alpine -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="325"
+      >
+        <span class="text-xl font-black italic text-blue-600">A</span>
+      </div>
+      <!-- Williams -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="390"
+      >
+        <span class="text-xl font-black text-blue-500 tracking-tighter">W</span>
+      </div>
+      <!-- RB / Racing Bulls -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="420"
+      >
+        <span class="text-sm font-black text-slate-800 tracking-tight">RB</span>
+      </div>
+      <!-- Haas -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="420"
+      >
+        <div
+          class="w-7 h-7 rounded-full border-2 border-red-600 flex items-center justify-center text-xs font-black text-red-600"
+        >
+          H
+        </div>
+      </div>
+      <!-- Kick Sauber -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="420"
+      >
+        <span class="text-lg font-black text-green-500">K</span>
+      </div>
+      <!-- Audi -->
+      <div
+        class="flex-shrink-0 w-24 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center p-2.5 hover:shadow-md hover:border-gray-300 transition-all cursor-pointer team-card"
+        data-reveal="up"
+        data-reveal-delay="420"
+      >
+        <div class="flex -space-x-1">
+          <span class="w-3.5 h-3.5 rounded-full border border-gray-800"></span>
+          <span class="w-3.5 h-3.5 rounded-full border border-gray-800"></span>
+          <span class="w-3.5 h-3.5 rounded-full border border-gray-800"></span>
+          <span class="w-3.5 h-3.5 rounded-full border border-gray-800"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: TeamsStrip -->
+  <!-- BEGIN: CategoriesSection -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"
+    data-purpose="categories-grid"
+    data-reveal="up"
+  >
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-6">
+      Категории
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+      data-stagger=""
+    >
+      <!-- Category 1: Одежда и мерч -->
+      <div
+        class="relative bg-zinc-100 rounded-2xl p-5 h-48 overflow-hidden group cursor-pointer border border-transparent hover:border-gray-200 transition-all category-card"
+        data-reveal="up"
+        data-reveal-delay="0"
+      >
+        <div class="z-10 relative">
+          <h3 class="font-extrabold text-base text-gray-900 leading-snug">
+            Одежда<br />и мерч
+          </h3>
+          <div
+            class="mt-16 w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-700 group-hover:bg-black group-hover:text-white transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <img
+          alt="Одежда и мерч"
+          class="absolute -right-6 -bottom-6 w-44 h-44 object-contain transition-transform duration-300 group-hover:scale-105 category-image"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHVbUb84lK20WHjGqsZ9UcioanBtbeS5bIJ7Gy_yZ3fq9vkinVleL2nxWBQHC6faoHToEs29eXVGqOBCURvcZ-Du1wJs7XGqgguTG9e3gNg03jRU3EZC-WO3DuM8vreNSkXf_7ZqRU_S0-B3u6658piF5uiY9M412I-DZz34g-82sJWJp9ev3TGG3lZyg7Z__7i1gXIWN9TIOVYLB26bUhHaVG_-yNa6I7CMgE3w"
+        />
+      </div>
+      <!-- Category 2: Модели болидов -->
+      <div
+        class="relative bg-zinc-100 rounded-2xl p-5 h-48 overflow-hidden group cursor-pointer border border-transparent hover:border-gray-200 transition-all category-card"
+        data-reveal="up"
+        data-reveal-delay="65"
+      >
+        <div class="z-10 relative">
+          <h3 class="font-extrabold text-base text-gray-900 leading-snug">
+            Модели<br />болидов
+          </h3>
+          <div
+            class="mt-16 w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-700 group-hover:bg-black group-hover:text-white transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <img
+          alt="Модели болидов"
+          class="absolute -right-2 -bottom-2 w-48 h-40 object-contain transition-transform duration-300 group-hover:scale-105 category-image"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2XI2UGc1bJz9NERhwniFOPK-ct7IA3FE54SpQwoLsSQYgZvq4GRbRE8ldNPeo-TY9_t9XmtMC-aG9f5p9FIEaBLiR-BwBIAKqwFX2ieXg4phCQgYlr5QC0L945NRVG4BzwrEiOeB6E8pDrbPa3-1O6m-hQLK22rH-2doUrBba3-cm01q76XxpuTqrjsoJXgpfChJ5kWCIiEM4_dUYRodXL1A-RjfQe01tTDVrTg"
+        />
+      </div>
+      <!-- Category 3: Аксессуары -->
+      <div
+        class="relative bg-zinc-100 rounded-2xl p-5 h-48 overflow-hidden group cursor-pointer border border-transparent hover:border-gray-200 transition-all category-card"
+        data-reveal="up"
+        data-reveal-delay="130"
+      >
+        <div class="z-10 relative">
+          <h3 class="font-extrabold text-base text-gray-900 leading-snug">
+            Аксессуары
+          </h3>
+          <div
+            class="mt-20 w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-700 group-hover:bg-black group-hover:text-white transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <img
+          alt="Аксессуары"
+          class="absolute -right-4 -bottom-4 w-40 h-40 object-contain transition-transform duration-300 group-hover:scale-105 category-image"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUy5D7rVYlJoJrvVaE2F00PRVeYn_ZP9ofde0nsfcdpqm_ObgQGdjJOEqDWGdSJebDtr8tW6_OaF7hQPFCDyA5awD8XRDFO84mgWW9EgAdgSPpXj87F7BssPl38AhDycFZYZchNsxHWHXqPHV56gSGw5XJlZQzcFC2mAnMV2rO-_nBDzsRGhKt_hII6U4Cr-VqxoPhI0NeC8WXsmA1HmKXt4ozvIPRa6_BLlMyYg"
+        />
+      </div>
+      <!-- Category 4: Постеры и книги -->
+      <div
+        class="relative bg-zinc-100 rounded-2xl p-5 h-48 overflow-hidden group cursor-pointer border border-transparent hover:border-gray-200 transition-all category-card"
+        data-reveal="up"
+        data-reveal-delay="195"
+      >
+        <div class="z-10 relative">
+          <h3 class="font-extrabold text-base text-gray-900 leading-snug">
+            Постеры<br />и книги
+          </h3>
+          <div
+            class="mt-16 w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-700 group-hover:bg-black group-hover:text-white transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <img
+          alt="Постеры и книги"
+          class="absolute right-0 bottom-0 w-36 h-40 object-contain transition-transform duration-300 group-hover:scale-105 category-image"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4VNEWD_FxXqzzo5U8zh1_GnFNALlnzon6OcfC8RMitREnf9aa2-V0ZTJpdv8RLHIhsPynoA8M4VFIVNqFcAxorNL9c3B1RkJoiy3-6Cyjz5-y1PU1yEL2E7ppgS0C3dfC59FwKbUKDpK7N-wlXkoS1Of_PeGrArvRmS4P3ARtH6TNtHGjJd7ioEtBiKsojHt-lY2054ASv0dC1Zcxpugv2WEd1kDwrUQJGK2h9Q"
+        />
+      </div>
+    </div>
+  </section>
+  <!-- END: CategoriesSection -->
+  <!-- BEGIN: PopularProductsSection -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+    data-purpose="popular-products"
+    data-reveal="up"
+    id="popular"
+  >
+    <div
+      class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6"
+    >
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+        Популярное
+      </h2>
+      <!-- Filter Tabs -->
+      <div
+        class="flex items-center space-x-1.5 bg-gray-100 p-1 rounded-xl text-xs font-semibold"
+      >
+        <button class="px-4 py-1.5 bg-black text-white rounded-lg shadow-sm">
+          Хиты
+        </button>
+        <button class="px-4 py-1.5 text-gray-600 hover:text-black">
+          Новинки
+        </button>
+        <button class="px-4 py-1.5 text-gray-600 hover:text-black">
+          Коллекции
+        </button>
+      </div>
+    </div>
+    <!-- 5-column Products Grid -->
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+      data-stagger=""
+    >
+      <!-- Product Card 1 -->
+      <article
+        class="bg-zinc-100 rounded-2xl p-4 flex flex-col justify-between group hover:shadow-md transition-shadow relative product-card"
+        data-reveal="up"
+        data-reveal-delay="0"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-400 hover:text-black transition-colors product-action favorite-button"
+          title="В избранное"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="py-4 flex items-center justify-center">
+          <img
+            alt="Худи Red Bull Racing 2026"
+            class="w-36 h-36 object-contain group-hover:scale-105 transition-transform duration-200 product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVFzfoKmnTrIT2aC7KatP4kLowshllfoRIoCrWAbsstd3LIAmiBgB-9Slic_izgZ_HJlfzekIL0_qeyAfy2cBXPmz-c9ZcORCvD4GdktZTFd5xA2-uPl8k9ofiQ1xvzH7ZqGID52fuhfsqdVo-uqUe7jb80pVbcCVwRpMVmuoj-4GxvMIMaatrwCE6l8wk_xccKmvQiArOvTWQpzn1jp-rLPWaNdtOnJLcT32Mjw"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xs font-bold text-gray-900 leading-snug min-h-[32px] line-clamp-2"
+          >
+            Худи Red Bull Racing 2026
+          </h3>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="font-extrabold text-sm text-gray-900">59 990 ₸</span>
+            <button
+              class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors product-action"
+              title="Добавить в корзину"
+            >
+              <svg
+                class="w-4 h-4 stroke-[2]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Product Card 2 -->
+      <article
+        class="bg-zinc-100 rounded-2xl p-4 flex flex-col justify-between group hover:shadow-md transition-shadow relative product-card"
+        data-reveal="up"
+        data-reveal-delay="65"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-400 hover:text-black transition-colors product-action favorite-button"
+          title="В избранное"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="py-4 flex items-center justify-center">
+          <img
+            alt="Кепка Scuderia Ferrari"
+            class="w-36 h-36 object-contain group-hover:scale-105 transition-transform duration-200 product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDdTYIx335uZJSOVrxjyhZGkwP97E69kabC9E315pzbhhB9-P_3IYxYgJHVHyQVVMtDnuTP0fCT3OM1wHX0ZWXpX2YNpYapZxKblQ5v4EX-QgTvx-M4bm9It6Q3kvA_hWPZKPxM1pRvKLrOcPQCq4ljwhDXv8E283-LMNLUAUhFIiEOnkOmPQtKJRKkn2Lwud5XeOgplt1onNJ7I5V-aDnbakKDLmYRmi3R2wRig"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xs font-bold text-gray-900 leading-snug min-h-[32px] line-clamp-2"
+          >
+            Кепка Scuderia Ferrari
+          </h3>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="font-extrabold text-sm text-gray-900">18 990 ₸</span>
+            <button
+              class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors product-action"
+              title="Добавить в корзину"
+            >
+              <svg
+                class="w-4 h-4 stroke-[2]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Product Card 3 -->
+      <article
+        class="bg-zinc-100 rounded-2xl p-4 flex flex-col justify-between group hover:shadow-md transition-shadow relative product-card"
+        data-reveal="up"
+        data-reveal-delay="130"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-400 hover:text-black transition-colors product-action favorite-button"
+          title="В избранное"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="py-4 flex items-center justify-center">
+          <img
+            alt="Поло McLaren Team"
+            class="w-36 h-36 object-contain group-hover:scale-105 transition-transform duration-200 product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD30c_YWSKU_b3MwCxEph9bUvqoJOVsC85jWRnA5mfSSa_DnDj9f3DOMmbcyEMFPqj1L-n9cP4gLcKYb1F_35AdSQb2ugduz6M25L4gicfwcV1Mu7Focxwjvx6DqxuuAU7iVUldNQFYsoDk91cSCgFh3g3KKNonXOOsXEoRIQec1ovr04WaZIIIf2twvZf4-cC3kh3ENMz9BCom7FrKmWntG7TCxUplTVtC3SChQ"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xs font-bold text-gray-900 leading-snug min-h-[32px] line-clamp-2"
+          >
+            Поло McLaren Team
+          </h3>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="font-extrabold text-sm text-gray-900">44 990 ₸</span>
+            <button
+              class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors product-action"
+              title="Добавить в корзину"
+            >
+              <svg
+                class="w-4 h-4 stroke-[2]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Product Card 4 -->
+      <article
+        class="bg-zinc-100 rounded-2xl p-4 flex flex-col justify-between group hover:shadow-md transition-shadow relative product-card"
+        data-reveal="up"
+        data-reveal-delay="195"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-400 hover:text-black transition-colors product-action favorite-button"
+          title="В избранное"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="py-4 flex items-center justify-center">
+          <img
+            alt="Худи Mercedes-AMG"
+            class="w-36 h-36 object-contain group-hover:scale-105 transition-transform duration-200 product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbU9R1AVwNY-_HnyMI2ueU_FOKACa-aEzNO278kyX2Dxk24ji5pRGB4-oisro2rRfzRza9h0hUrCIf3xmTKcFiGN3t8uG-iZfj9Kxah15jZEFGaWmt355ugU2dkcbUwl4H_u7BWuMBd3THv3ZxT_epIO9u77jLwyDyAIIOxnFgaSReuta8PSnc1VGp4V2ZabnpO7Xz8qqfKHZE4QnCYvd2hCeRIDC1hNf167zGvw"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xs font-bold text-gray-900 leading-snug min-h-[32px] line-clamp-2"
+          >
+            Худи Mercedes-AMG
+          </h3>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="font-extrabold text-sm text-gray-900">59 990 ₸</span>
+            <button
+              class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors product-action"
+              title="Добавить в корзину"
+            >
+              <svg
+                class="w-4 h-4 stroke-[2]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Product Card 5 -->
+      <article
+        class="bg-zinc-100 rounded-2xl p-4 flex flex-col justify-between group hover:shadow-md transition-shadow relative product-card"
+        data-reveal="up"
+        data-reveal-delay="260"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-400 hover:text-black transition-colors product-action favorite-button"
+          title="В избранное"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="py-4 flex items-center justify-center">
+          <img
+            alt="Модель Red Bull RB21 (1:43)"
+            class="w-36 h-36 object-contain group-hover:scale-105 transition-transform duration-200 product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhg3KLYuci4lv5gZwZtCOaqVFrC-YVHts-TXjYGuYmmWimXiln2AmUgy-kijapgqb3A8fhvWXCYP0OtOrMU_kG0HhdcnIeDj6yC9k5B0YTGoNnExrkME_4d5GrBtFL-oTwk7HEKDLAMlqKZnpJzeIuFXSOpHWlpWPP92omJVI53_MCu8aUnVWuJVvqQbMacmHIQkBXE4nDxHiz9LJwNa4BJnUTJ84vCz911GqQsw"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xs font-bold text-gray-900 leading-snug min-h-[32px] line-clamp-2"
+          >
+            Модель Red Bull RB21 (1:43)
+          </h3>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="font-extrabold text-sm text-gray-900">37 990 ₸</span>
+            <button
+              class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors product-action"
+              title="Добавить в корзину"
+            >
+              <svg
+                class="w-4 h-4 stroke-[2]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- END: PopularProductsSection -->
+  <!-- BEGIN: PromoBannerSection -->
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+    data-purpose="promo-banner"
+    data-reveal="up"
+  >
+    <div
+      class="relative w-full rounded-2xl overflow-hidden bg-black text-white min-h-[220px] flex items-center shadow-lg promo-panel"
+    >
+      <!-- Background Fabric and Embroidered Red Logo effect -->
+      <div class="absolute inset-0 z-0">
+        <div
+          class="w-full h-full bg-[radial-gradient(#262626_1px,transparent_1px)] [background-size:12px_12px] opacity-60"
+        ></div>
+        <!-- Red Embroidered F1 Graphic on the right -->
+        <div
+          class="absolute -right-8 -bottom-10 opacity-80 pointer-events-none"
+        >
+          <svg
+            class="w-96 h-48 text-red-600 filter drop-shadow-[0_10px_20px_rgba(225,6,0,0.5)]"
+            fill="currentColor"
+            viewBox="0 0 100 40"
+          >
+            <path
+              d="M0,38 L30,4 L48,4 L32,38 L16,38 L25,18 L18,18 L9,38 Z M45,4 L88,4 C96,4 100,8 98,14 C96,18 91,22 84,23 L96,38 L81,38 L72,25 L58,25 L52,38 L38,38 Z M62,18 L76,18 C80,18 82,16 83,14 C83.5,12 82,10 78,10 L66,10 Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="relative z-10 px-8 sm:px-12 py-8 max-w-lg">
+        <span
+          class="text-[11px] uppercase tracking-wider text-zinc-400 font-bold block mb-2"
+          >Коллекция 2026</span
+        >
+        <h2
+          class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-2 leading-tight"
+        >
+          Новая сезонная<br />коллекция F1
+        </h2>
+        <p class="text-xs sm:text-sm text-zinc-300 mb-6">
+          Мерч всех команд сезона 2026 уже в продаже.
+        </p>
+        <a
+          class="inline-flex items-center gap-2 bg-white text-black font-bold text-xs px-5 py-2.5 rounded-xl hover:bg-zinc-200 transition-colors shadow"
+          href="#"
+        >
+          <span>Смотреть коллекцию</span>
+          <svg
+            class="w-3.5 h-3.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: PromoBannerSection -->
+</main>
+{{end}}

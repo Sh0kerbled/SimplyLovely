@@ -1,12 +1,423 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/output.css" />
     <title>Simply Lovely</title>
-</head>
-<body>
-    <p class="bg-amber-300">asdfdfs</p>
-</body>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header
+      class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm"
+      data-purpose="site-navigation"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <a class="flex items-center space-x-2.5 group" href="#">
+          <!-- F1-styled Custom SVG Red Emblem -->
+          <svg
+            class="h-6 w-9 text-f1red transition-transform group-hover:scale-105 duration-200"
+            fill="currentColor"
+            viewbox="0 0 100 40"
+          >
+            <path
+              d="M0,38 L30,4 L48,4 L32,38 L16,38 L25,18 L18,18 L9,38 Z M45,4 L88,4 C96,4 100,8 98,14 C96,18 91,22 84,23 L96,38 L81,38 L72,25 L58,25 L52,38 L38,38 Z M62,18 L76,18 C80,18 82,16 83,14 C83.5,12 82,10 78,10 L66,10 Z"
+            ></path>
+          </svg>
+          <span
+            class="text-xl font-extrabold tracking-tight text-gray-900 font-sans"
+          >
+            Simply Lovely<sup class="text-xs font-semibold">®</sup>
+          </span>
+        </a>
+        <!-- Primary Navigation Links -->
+        <nav
+          class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700"
+        >
+          <div
+            class="relative group cursor-pointer flex items-center gap-1 hover:text-black transition-colors"
+          >
+            <span>Магазин</span>
+            <svg
+              class="w-3.5 h-3.5 text-gray-400 group-hover:text-black transition-transform group-hover:translate-y-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="relative group cursor-pointer flex items-center gap-1 hover:text-black transition-colors"
+          >
+            <span>Команды</span>
+            <svg
+              class="w-3.5 h-3.5 text-gray-400 group-hover:text-black transition-transform group-hover:translate-y-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              ></path>
+            </svg>
+          </div>
+          <a class="hover:text-black transition-colors" href="#">Коллекции</a>
+          <a class="hover:text-black transition-colors" href="#">F1 мир</a>
+          <a class="hover:text-black transition-colors" href="#">О нас</a>
+        </nav>
+        <!-- Right Utility Actions -->
+        <div class="flex items-center space-x-6 text-gray-700">
+          <!-- Search -->
+          <button
+            aria-label="Поиск"
+            class="hover:text-black transition-colors"
+            title="Поиск"
+          >
+            <svg
+              class="w-5 h-5 stroke-[2]"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path
+                d="m21 21-4.3-4.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <!-- Wishlist -->
+          <button
+            aria-label="Избранное"
+            class="hover:text-black transition-colors"
+            title="Избранное"
+          >
+            <svg
+              class="w-5 h-5 stroke-[2]"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <!-- Cart with badge -->
+          <button
+            aria-label="Корзина"
+            class="relative hover:text-black transition-colors"
+            title="Корзина"
+          >
+            <svg
+              class="w-5 h-5 stroke-[2]"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span
+              class="absolute -top-1.5 -right-2 bg-f1red text-white font-bold text-[10px] w-4 h-4 rounded-full flex items-center justify-center"
+              >0</span
+            >
+          </button>
+          <!-- Language Selector -->
+          <div
+            class="flex items-center space-x-1 cursor-pointer font-bold text-xs hover:text-black"
+          >
+            <span>RU</span>
+            <svg
+              class="w-3 h-3 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      {{block "content" . }}
+      {{end}}
+    </main>
+    <footer
+       class="mt-auto bg-zinc-100 border-t border-gray-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 pb-10">
+          <!-- Brand & Socials (Col 1 & 2) -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-2 group">
+              <svg
+                class="h-5 w-8 text-f1red"
+                fill="currentColor"
+                viewbox="0 0 100 40"
+              >
+                <path
+                  d="M0,38 L30,4 L48,4 L32,38 L16,38 L25,18 L18,18 L9,38 Z M45,4 L88,4 C96,4 100,8 98,14 C96,18 91,22 84,23 L96,38 L81,38 L72,25 L58,25 L52,38 L38,38 Z"
+                ></path>
+              </svg>
+              <span
+                class="text-lg font-black tracking-tight text-gray-900 font-sans"
+              >
+                Simply Lovely<sup class="text-[10px] font-bold">®</sup>
+              </span>
+            </div>
+            <p class="text-xs text-gray-500 mt-3 max-w-xs leading-relaxed">
+              Магазин официального мерча и коллекций Формулы 1.
+            </p>
+            <!-- Social media icons -->
+            <div class="flex items-center space-x-3 mt-5 text-gray-700">
+              <!-- Instagram -->
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:text-black hover:border-black transition-colors"
+                href="#"
+                title="Instagram"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <rect
+                    height="20"
+                    rx="5"
+                    stroke-width="2"
+                    width="20"
+                    x="2"
+                    y="2"
+                  ></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    stroke-width="2"
+                  ></path>
+                  <line
+                    stroke-width="2"
+                    x1="17.5"
+                    x2="17.51"
+                    y1="6.5"
+                    y2="6.5"
+                  ></line>
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:text-black hover:border-black transition-colors"
+                href="#"
+                title="YouTube"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- TikTok -->
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:text-black hover:border-black transition-colors"
+                href="#"
+                title="TikTok"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Telegram -->
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:text-black hover:border-black transition-colors"
+                href="#"
+                title="Telegram"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Col 3: Магазин -->
+          <div>
+            <h4
+              class="font-bold text-xs uppercase tracking-wider text-gray-900 mb-3"
+            >
+              Магазин
+            </h4>
+            <ul class="space-y-2 text-xs text-gray-600">
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Все товары</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Команды</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Коллекции</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Новинки</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#">Акции</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Col 4: Информация -->
+          <div>
+            <h4
+              class="font-bold text-xs uppercase tracking-wider text-gray-900 mb-3"
+            >
+              Информация
+            </h4>
+            <ul class="space-y-2 text-xs text-gray-600">
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Доставка</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Оплата</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Возврат и обмен</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Col 5: О нас -->
+          <div>
+            <h4
+              class="font-bold text-xs uppercase tracking-wider text-gray-900 mb-3"
+            >
+              О нас
+            </h4>
+            <ul class="space-y-2 text-xs text-gray-600">
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >О магазине</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black transition-colors" href="#"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Col 6: Будь в курсе F1 -->
+          <div>
+            <h4
+              class="font-bold text-xs uppercase tracking-wider text-gray-900 mb-2"
+            >
+              Будь в курсе F1
+            </h4>
+            <p class="text-xs text-gray-500 mb-3 leading-relaxed">
+              Получай анонсы коллекций, акции и новости Формулы 1.
+            </p>
+            <form
+              class="relative flex items-center"
+              onsubmit="event.preventDefault()"
+            >
+              <input
+                class="w-full text-xs bg-white border border-gray-200 rounded-full py-2.5 pl-4 pr-10 focus:outline-none focus:border-black placeholder-gray-400"
+                placeholder="Твой e-mail"
+                type="email"
+              />
+              <button
+                aria-label="Подписаться"
+                class="absolute right-1 w-7 h-7 bg-black text-white rounded-full flex items-center justify-center hover:bg-zinc-800 transition-colors"
+                type="submit"
+              >
+                <svg
+                  class="w-3.5 h-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div
+          class="pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500"
+        >
+          <p>© 2026 Simply Lovely. Все права защищены.</p>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <svg
+              class="h-3 w-6 text-f1red opacity-80"
+              fill="currentColor"
+              viewbox="0 0 100 40"
+            >
+              <path
+                d="M0,38 L30,4 L48,4 L32,38 L16,38 L25,18 L18,18 L9,38 Z M45,4 L88,4 C96,4 100,8 98,14 C96,18 91,22 84,23 L96,38 L81,38 L72,25 L58,25 L52,38 L38,38 Z"
+              ></path>
+            </svg>
+            <span class="text-[11px] font-medium text-gray-600"
+              >Officially inspired by Formula 1®</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

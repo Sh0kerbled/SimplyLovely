@@ -6,7 +6,12 @@ import (
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	tmpl, _ := template.ParseFiles("web/templates/layouts/base.html")
+	tmpl, err := template.ParseFiles("web/templates/layouts/base.html", "web/templates/pages/home.html")
 
-	tmpl.Execute(w, nil)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	tmpl.ExecuteTemplate(w, "base.html", nil)
 }
